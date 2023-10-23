@@ -6,20 +6,30 @@ public class FactorialUsingIteration {
 	
 	 static int factorial(int n) 
 	    { 
-		 System.out.println("Value of n :"+n);
-	        int res = 1, i; 
-	        
-	        for (i = 2; i <= n; i++)
-	        	
-	            res *= i;
-	       
-	        return res; 
-	    } 
+		 //System.out.println("Value of n :"+n);
+		 
+		 if (n == 0 || n == 1) {
+			 System.out.println("Entered if part");
+			 return 1;
+			 
+		} else {
+			System.out.println("Entered else part");
+			 int res = 1, i; 
+		        
+		        for (i = 2; i <= n; i++)
+		        	
+		        	res *= i; //these both uncommented and commented statements produces a same results 
+		        	//res = res *i;
+		       
+		        return res;
+			}
+		 
+	   } 
 	  
 	    // main method 
 	    public static void main(String[] args) 
 	    { 
-	        int num = 6; 
+	        int num = 3; 
 	        System.out.println("Factorial of " + num + " is "
 	                           + factorial(num)); 
 			/*
