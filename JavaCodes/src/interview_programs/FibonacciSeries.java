@@ -8,7 +8,6 @@ public class FibonacciSeries {
     static void Fibonacci(int N)
     {
         int num1 = 0, num2 = 1;
- 
         int counter = 0;
  
         // Iterate till counter is N

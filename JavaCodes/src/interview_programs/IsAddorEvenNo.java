@@ -7,7 +7,7 @@ public class IsAddorEvenNo {
 	public static void main(String[] args)
 	{
 		// Declaring and initializing integer variable
-		int num = 100;
+		int num = 99;
 
 		// Checking if number is even or odd number
 		// via remainder
@@ -19,8 +19,7 @@ public class IsAddorEvenNo {
 
 		else {
 
-			// If remainder is not zero then this number is
-			// odd
+			// If remainder is not zero then this number is odd
 			System.out.println("Entered Number is Odd");
 		}
 	}

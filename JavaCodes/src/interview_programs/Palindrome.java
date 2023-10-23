@@ -22,7 +22,7 @@ public String whtherPali(String pali) {
 		if(whtherPali == true) {
 			System.out.println("Input String is "+pali+" and is a Palindrome");
 		}
-		else if(whtherPali == false){			
+		else if(whtherPali == false){	
 			System.out.println("Input String is "+pali+" and is not a Palindrome");
 		}	
 		return pali; 
@@ -31,7 +31,7 @@ public String whtherPali(String pali) {
 	public static void main(String[] args) {
 		
 		Palindrome palObj = new Palindrome();
-		String inputStr = "MAMa"; 
+		String inputStr = "MAM"; 
 		//if give input string as Madam in inputStr then output is: not a Palindrome
 		//actually if read the string "Madam" in reverse looks palindrome but it isn't
 		//this is because, compiler checks the ASCII value since M and m aren't same ASCII value it prints as: not a Palindrome

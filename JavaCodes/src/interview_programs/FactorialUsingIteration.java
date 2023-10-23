@@ -6,19 +6,20 @@ public class FactorialUsingIteration {
 	
 	 static int factorial(int n) 
 	    { 
+		 System.out.println("Value of n :"+n);
 	        int res = 1, i; 
 	        
-	        for (i = 2; i <= n; i++) 
-	        	System.out.println("value of res before multiplication "+res);
-	            res *= i; 
-	            System.out.println("value of res after multiplication "+res);
+	        for (i = 2; i <= n; i++)
+	        	
+	            res *= i;
+	       
 	        return res; 
 	    } 
 	  
 	    // main method 
 	    public static void main(String[] args) 
 	    { 
-	        int num = 5; 
+	        int num = 6; 
 	        System.out.println("Factorial of " + num + " is "
 	                           + factorial(num)); 
 			/*
