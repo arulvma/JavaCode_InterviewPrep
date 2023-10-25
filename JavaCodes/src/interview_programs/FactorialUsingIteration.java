@@ -18,7 +18,7 @@ public class FactorialUsingIteration {
 		        
 		        for (i = 2; i <= n; i++)
 		        	
-		        	res *= i; //these both uncommented and commented statements produces a same results 
+		        	res *= i; //these both res *= i; and res = res *i; statements produces a same results 
 		        	//res = res *i;
 		       
 		        return res;
@@ -30,8 +30,7 @@ public class FactorialUsingIteration {
 	    public static void main(String[] args) 
 	    { 
 	        int num = 3; 
-	        System.out.println("Factorial of " + num + " is "
-	                           + factorial(num)); 
+	        System.out.println("Factorial of " + num + " is "+ factorial(num)); 
 			/*
 			 * System.out.println("Factorial of " + num + " is " + factorial(5));
 			 */

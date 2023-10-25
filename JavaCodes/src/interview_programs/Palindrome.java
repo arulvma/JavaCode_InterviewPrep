@@ -1,8 +1,8 @@
 package interview_programs;
 
 public class Palindrome {
-	
-public String whtherPali(String pali) {
+	//Source: TestLeaf assignment
+	public String whtherPali(String pali) {
 		
 		String rev = "";
 		System.out.println("String pali valu is: "+pali);
@@ -14,7 +14,8 @@ public String whtherPali(String pali) {
 			rev = rev + pali.charAt(i);
 			//System.out.println("String rev value is: "+rev);
 			
-		}		
+		}	
+		
 		System.out.println("String rev value is: "+rev);
 		
 		boolean whtherPali = pali.equals(rev);
@@ -31,7 +32,7 @@ public String whtherPali(String pali) {
 	public static void main(String[] args) {
 		
 		Palindrome palObj = new Palindrome();
-		String inputStr = "MAM"; 
+		String inputStr = "qse"; 
 		//if give input string as Madam in inputStr then output is: not a Palindrome
 		//actually if read the string "Madam" in reverse looks palindrome but it isn't
 		//this is because, compiler checks the ASCII value since M and m aren't same ASCII value it prints as: not a Palindrome
@@ -39,7 +40,6 @@ public String whtherPali(String pali) {
 		palObj.whtherPali(inputStr.toLowerCase()); //to fix this conflict, must change the String into either lower or upper case	
 		//palObj.whtherPali(inputStr.toUpperCase());
 		//palObj.whtherPali(inputStr);
-
 	}
 
 }
