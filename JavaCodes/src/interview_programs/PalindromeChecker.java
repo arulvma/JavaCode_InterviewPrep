@@ -3,10 +3,9 @@ package interview_programs;
 //Referred URL:geeksforgeeks
 public class PalindromeChecker {	
 	
-	    public static void main(String[] args) {	        
-	    	
+	    public static void main(String[] args) {	 
 	    	//System.out.println("Main method");	    	
-	    	String input = "MAMw"; // Change this to the string you want to check
+	    	String input = "MA M2"; // Change this to the string you want to check
 	        System.out.println("Actual input length is: "+input.length());
 	        
 	        if (isPalindrome(input)) {	        	
@@ -24,7 +23,6 @@ public class PalindromeChecker {
 	    public static boolean isPalindrome(String str) {	        
 	    	//System.out.println("isPalindrome method");	    	
 	    	// Remove spaces and convert to lowercase for a case-insensitive check
-	    	
 	        str = str.replaceAll("\\s", "").toLowerCase();
 	        System.out.println("when using replaceAll method then the input length is: "+str.length());
 
@@ -33,6 +31,7 @@ public class PalindromeChecker {
 
 	        while (left < right) {
 	            if (str.charAt(left) != str.charAt(right)) {
+	            	System.out.println("if part");
 	            	//System.out.println("leftChar "+str.charAt(left));
 	            	//System.out.println("rightChar "+str.charAt(right));
 	                return false; // Characters don't match, so it's not a palindrome
@@ -41,8 +40,6 @@ public class PalindromeChecker {
 	            left++;
 	            right--;
 	        }
-
 	        return true; // If the loop finishes, it's a palindrome
 	    }
-
 }

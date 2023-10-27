@@ -15,7 +15,7 @@ package interview_programs;
 	        //System.out.println("---------Input 2 ------");
 	        //printCountOfDuplicateCharacter("aaaabbbcccccdddddd");
 
-	    }
+	    }        
 
 	    // print count of each character in a given string.
 	    private static void printCountOfDuplicateCharacter(String input) {
